@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="tamas.css">
+    <link rel  = "web site icon" type="png"
+        href = "icon/black.png">
+</head>
+<body>
+    <div class="bg">
+        <div class="top">راه‌های ارتباط با Gaya:</div>
+        <hr/>
+        <p>فقط کامنت‌های مرتبط را ارسال کنید، اما spam نکنید.</p>
+
+        <!-- Telegram Section -->
+        <div class="contact-method tele" onclick="copyTelegramId()">
+            بهترین راه برای ارتباط با من تلگرام است.
+            <lord-icon
+                src="https://cdn.lordicon.com/axtddqfk.json"
+                trigger="hover"
+                stroke="light"
+                colors="primary:#121331,secondary:#ffffff,tertiary:#4bb3fd"
+                style="width:80px; height:80px;">
+            </lord-icon>
+            <span>کلیک کنید تا آیدی تلگرام کپی شود</span>
+        </div>
+        <!-- Discord Section -->
+        <div class = "contact-method dis" onclick = "copyDiscordId()">
+            در صورت نیاز می‌توانید از دیسکورد هم استفاده کنید.
+            <lord-icon
+                src     = "https://cdn.lordicon.com/oscvnrst.json"
+                trigger = "hover"
+                stroke  = "light"
+                colors  = "primary:#000000,secondary:#4bb3fd,tertiary:#ffffff"
+                style   = "width:80px; height:80px;">
+            </lord-icon>
+            <span>کلیک کنید تا آیدی دیسکورد کپی شود</span>
+        </div>
+
+        <div class="contact-method insta">
+            <a href="https://www.instagram.com/mahdi31black/?next=%2F" target="_blank">
+                همچنین می‌توانید از اینستاگرام برای ارتباط استفاده کنید.
+                <lord-icon
+                    src="https://cdn.lordicon.com/wgtaryar.json"
+                    trigger="hover"
+                    style="width:80px;height:80px">
+                </lord-icon>
+                <span>کلیک کنید تا وارد اینستاگرام شود</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Lordicon Script -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- JavaScript Functions -->
+    <script>
+        function copyTelegramId() {
+            const telegramId = '@mahdi69black';
+            navigator.clipboard.writeText(telegramId)
+                .then(() => alert('آیدی تلگرام با موفقیت کپی شد!'))
+                .catch(err => alert('مشکلی پیش آمده! لطفاً دوباره امتحان کنید.'));
+        }
+
+        function copyDiscordId() {
+            const discordId = 'mahdi._.black';
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(discordId)
+                    .then(() => alert(`آیدی دیسکورد '${discordId}' با موفقیت کپی شد!`))
+                    .catch(err => alert('مشکلی پیش آمده! لطفاً دوباره امتحان کنید.'));
+            } else {
+                const tempInput = document.createElement('input');
+                tempInput.value = discordId;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                alert(`آیدی دیسکورد '${discordId}' با موفقیت کپی شد!`);
+            }
+        }
+    </script>
+</body>
+</html>

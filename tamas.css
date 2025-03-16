@@ -1,0 +1,87 @@
+
+/* Font Face */
+@font-face {
+    font-family: 'vazir';
+    src: url(../font/vazir-font-v16.1.0/) format('woff');
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'vazir', sans-serif;
+    background: rgb(64,0,16);
+    background: linear-gradient(90deg, rgba(64,0,16,1) 0%, rgba(79,2,23,1) 35%, rgba(79,2,23,1) 65%, rgba(64,0,16,1) 100%);
+    color: #ffe3e4;
+    font-size: 20px;
+    direction: rtl;
+}
+
+/* Main Container */
+.bg {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.top {
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding: 6px;
+}
+
+/* Horizontal Rule */
+hr {
+    background-color: #ffe3e4;
+    height: 3.5px;
+    margin: 15px 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Paragraph */
+p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contact Methods */
+.contact-method {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+    transform: scale(1.05);
+}
+
+.contact-method span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/* Telegram Section */
+.tele lord-icon {
+    margin: 0px 8px;
+}
+
+/* Discord Section */
+.dis lord-icon {
+    margin: 0px 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffe3e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

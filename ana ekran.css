@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'vazir';
+    src        : url(font/vazir-font-v16.1.0/Vazir.woff) format(woff);
+}
+body{
+    direction       : rtl;
+    font-family    : 'vazir', sans-serif;
+    clear           : both;
+    height          : auto;
+    width           : auto;
+    background-color: #47080a;
+}
+.black{
+    margin-bottom: 5px;
+    padding      : 15px ;
+    font-size    : 40px ;
+    height       : 150px;
+}
+.name{
+    text-shadow    : -12px 10px 11px rgb(0, 0, 0);
+    float          : right;
+    margin         : 12px;
+    justify-content: center;
+    align-items    : center;
+    color          : #ffe3e4;
+}
+.header{
+    width           : 100%;
+    height          : 100px;
+}
+    /* .head1:hover{
+    transform : scale(1.3);
+    transition: 2s;
+}
+.head2:hover{
+    transform : rotate(360deg);
+    transition: 1.5s;
+}
+.head3:hover{
+    transform : rotatex(360deg);
+    transition: 1.5s;
+
+}
+.head4:hover{
+    transform : rotatey(360deg);
+    transition: 1.5s;
+} */
+ul{
+    font-size      : 30px;
+    margin         : 0px 0px 0px 0px;
+    padding        : 0px;
+    padding-top    : 45px;
+    display        : flex;
+    gap            : 60px;
+    justify-content: center;
+    width          : auto;
+    height: auto;
+}
+li{
+    list-style    : none;
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+    color          : #ffe3e4;
+}
+a:hover{
+    color : #ffa2a5;
+    filter: blur(none);
+}
+li:hover {
+    filter       : blur(0);
+    transform    : scale(1);
+    transition   : filter 300ms, transform 300ms;
+    border-bottom: 3.5px solid  #ffa2a5;
+}
+
+#top:hover li:not(:hover) {
+    filter    : blur(1.5px);
+    transform : scale(0.8);
+    transition: filter 300ms, transform 300ms;
+}
+.img1{
+    width        : 150px;
+    height       : 150px;
+    float        : left;
+    border-radius: 50%;
+    box-shadow   : -18px 17px 47px 0px;
+}
+.talha{
+    width        : 60px;
+    height       : 60px;
+    float        : left;
+    border-radius: 50%;
+    margin-left  : 4px;
+}
+.talha:hover{
+    transform : scale(1.3);
+    transition: 800ms;
+    box-shadow: 0 0 14px 4px;
+}
+hr{
+    background-color: #ffe3e4;
+    height: 3.5px;
+    margin: 15px 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+h2{
+    color        : #ffe3e4;
+    border-right : 3px solid #ffe3e4 ;
+    padding-right: 20px ;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+/* استایل کانتینر اصلی */
+#updating {
+    margin-top:38px ;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* استایل تصاویر */
+.card img {
+    width: 311px;
+    height: 208px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* استایل محتوای کارت */
+.card-content {
+    width: 250px;
+    background-color: #831a1e;
+    border-radius: 10px;
+    margin-right: 27px;
+}
+
+/* استایل متن داخل کارت */
+.card-content span {
+    color: #ffe3e4;
+    padding: 0 30px;
+}
+
+.card:hover img{
+    transform: scale(0.5);
+    position: relative;
+    top: 0px ;
+    z-index: 1;
+    transition: 300ms;
+}
+
+.card:hover .card-content{
+    height: 300px;
+    position: relative;
+    top: -250px;
+    background-color: #831a1e;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: 300ms;
+}    
